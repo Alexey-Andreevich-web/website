@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteyner{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20vh;
+}
