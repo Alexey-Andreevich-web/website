@@ -1,12 +1,130 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-.conteyner{
-    display: flex;
-    border: 2px solid black;
-    justify-content: center;
     box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 10%;
+    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(128,226,255,1) 100%);
+    min-height: 100vh;
+}
+
+.content {
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Очень важно */
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-nav {
+    margin-top: 15px;
+}
+
+.main-nav a {
+    margin: 0 10px;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.inner-container {
+    display: flex;
     width: 100%;
-    height: 20vh;
+    flex-grow: 1; /* Заставляет занимать всё оставшееся пространство */
+}
+
+.inner-sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.main-content {
+    flex: 6;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.button_form {
+    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 150px;
+}
+
+.button_form:hover {
+
+    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
+
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+.logo{
+    display: flex;
+    align-items: flex-start;
+    height: 150px;
+    width: 150px;
+}
+.title_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

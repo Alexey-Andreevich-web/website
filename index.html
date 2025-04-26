@@ -1,20 +1,85 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сайт</title>
-    <link type="text/css" rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>сайт</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<header>
-    <div class="conteyner">
-        <div class="text_zag"> <h1>Сайт</h1></div>
-    </div>
-</header>
+<div class="container">
+    <div class="sidebar left"></div>
 
+    <div class="content">
+
+        <header>
+            <img class="logo" src="logo.jpg" alt="Логотип">
+            <div class="title_text">
+            <p>Преподаватель английского языка</p>
+            </div>
+            <nav class="main-nav">
+                <a href="#about">Обо мне</a>
+                <a href="#services">Услуги</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+
+        </header>
+
+        <div class="inner-container">
+            <div class="inner-sidebar left-inner"></div>
+
+            <div class="main-content">
+                <main>
+                    <section id="about">
+                        <h2>Обо мне</h2>
+                        <p>Краткая информация о вашем опыте, квалификации и подходе к обучению.</p>
+                        <p>Я занимаюсь преподаванием английского языка более 10 лет. Работаю как с детьми, так и со взрослыми. Индивидуальный подход к каждому студенту — ключ к успеху в обучении.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, lorem non suscipit sagittis, justo libero bibendum quam, nec pharetra erat velit nec libero. Vivamus sit amet sapien vitae lacus commodo tempus. Integer mollis diam sed tincidunt volutpat. Duis euismod erat a magna elementum, a vehicula magna gravida. Nullam tincidunt dui a massa tempor, id pretium nisi blandit. Suspendisse non dui justo. In et ipsum vel justo euismod ullamcorper vitae vel metus.</p>
+                        <p>Etiam vitae nulla id velit posuere tincidunt non id sapien. Maecenas non leo nec diam fermentum cursus non id diam. Proin sagittis turpis non purus dignissim, in faucibus erat vulputate. Sed non sapien vitae urna scelerisque congue.</p>
+                    </section>
+
+                    <section id="services">
+                        <h2>Услуги</h2>
+                        <ul>
+                            <li>Подготовка к экзаменам (IELTS, TOEFL, ЕГЭ)</li>
+                            <li>Разговорный английский</li>
+                            <li>Английский для бизнеса и путешествий</li>
+                            <li>Индивидуальные программы обучения</li>
+                        </ul>
+                    </section>
+
+                    <section id="reviews">
+                        <h2>Отзывы</h2>
+                        <p>«Отличный преподаватель! За 3 месяца подготовки к экзамену улучшил уровень английского с B1 до C1!»</p>
+                        <p>«Очень терпеливый и внимательный. Уроки проходят легко и интересно!»</p>
+                    </section>
+
+                    <section id="contact">
+                        <h2>Контакты</h2>
+                        <form id="contact-form">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="email" name="email" placeholder="Ваш email" required>
+                            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                            <button class="button_form" type="submit">Отправить</button>
+                        </form>
+                    </section>
+                </main>
+            </div>
+
+            <div class="inner-sidebar right-inner"></div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Ваше Имя. Все права защищены.</p>
+        </footer>
+
+    </div>
+
+    <div class="sidebar right"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
