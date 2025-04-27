@@ -30,26 +30,32 @@ body, html {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    text-align: center;
     padding: 20px;
     border-bottom: 1px solid #ccc;
 }
 
 .main-nav {
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.main-nav a {
+.main-nav button {
+    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
     margin: 0 10px;
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
-.main-nav a:hover {
-    text-decoration: underline;
+.main-nav button:hover {
+    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
 }
 
 .inner-container {
@@ -118,13 +124,24 @@ footer {
 }
 .logo{
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     height: 150px;
     width: 150px;
 }
-.title_text{
+.title_text_img{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
+
+}
+.title_text_img p{
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner-content img{
+    width: 100%;
+    height: 15%;
 }
