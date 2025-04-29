@@ -127,6 +127,9 @@ footer {
     justify-content: flex-start;
     height: 150px;
     width: 150px;
+    @media  {
+        
+    }
 }
 .title_text_img{
     display: flex;
