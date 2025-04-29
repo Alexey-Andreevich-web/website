@@ -127,9 +127,6 @@ footer {
     justify-content: flex-start;
     height: 150px;
     width: 150px;
-    @media  {
-        
-    }
 }
 .title_text_img{
     display: flex;
@@ -147,4 +144,36 @@ footer {
 .inner-content img{
     width: 100%;
     height: 15%;
+}
+.inner-qrk img{
+    width: 100%;
+    height: 15%;
+}
+.inner-qrk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-qrk .soc_seti{
+    margin: 10px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+.inner-qrk .Vk_dl{
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+.container_icon{
+    font-size: 2vw;
+    margin: 10px 10px 10px 24px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+.tg .poch .phone{
+    margin: 10px;
 }
