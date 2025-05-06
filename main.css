@@ -17,7 +17,7 @@ body, html {
 
 .sidebar {
     width: 10%;
-    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(128,226,255,1) 100%);
+    background: linear-gradient(157deg, rgba(245, 198, 227, 0.89) 20%, rgba(148, 187, 233, 1) 100%);
     min-height: 100vh;
 }
 
@@ -216,5 +216,45 @@ footer {
     cursor: pointer;
     border-radius: 15px;
 }
-
-
+#accessibility-tools p{
+    padding: 30px 0 10px 0;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+#accessibility-tools {
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+#accessibility-tools button{
+    color: #2198a6;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    background: none;
+}
+#accessibility-tools button:hover{
+    color: orangered;
+    border-bottom: 3px solid blue;
+}
+#slab_btn{
+    font-size: 0.8rem;
+}
+#slab_btn1{
+    font-size: 1.1rem;
+}
+#slab_btn2{
+    font-size: 1.4rem;
+}
+#slab_btn3{
+    font-size: 1.7rem;
+}
+#slab_btn4{
+    font-size: 2rem;
+}
+.button_slab{
+    padding: 20px 0 20px 10px ;
+}

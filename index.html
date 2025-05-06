@@ -15,15 +15,15 @@
 
         <header>
 
-            <div class="title_text_img"> <img class="logo" src="logo.jpg" alt="Логотип">
-            <p>Название "The language lab"</p>
+            <div class="title_text_img"> <img class="logo" src="logo2.png" alt="Логотип">
+            <p>English Club "The language lab"</p>
             </div>
             <nav class="main-nav">
                 <button onclick="location.href='index.html'">Главная</button>
                 <button onclick="location.href='Prepod/Prepod.html'">Преподавателю</button>
                 <button onclick="location.href='Obych/Obych.html'">Обучающемуся</button>
                 <button onclick="location.href='NO_1/No_1.html'">Кнопка</button>
-                <button onclick="location.href='NO_2/No_2.html'">Кнопка</button>
+                <button onclick="location.href='NO_2/No_2.html'">Портфолио</button>
                 <button onclick="location.href='O_Mne/O_Mne.html'">Обо мне</button>
             </nav>
 
@@ -33,6 +33,16 @@
             <div class="inner-sidebar left-inner">
                 <div class="inner-content">
                     <img src="IMG_2.png" alt="фото">
+                </div>
+                <div id="accessibility-tools">
+                    <p>Версия для слабовидящих</p>
+                    <div class="button_slab">
+                    <button id="slab_btn" onclick="changeFontSize(-1)">+</button>
+                    <button id="slab_btn1" onclick="changeFontSize(0)">+</button>
+                    <button id="slab_btn2" onclick="changeFontSize(1)">+</button>
+                    <button id="slab_btn3" onclick="changeFontSize(2)">+</button>
+                    <button id="slab_btn4" onclick="changeFontSize(3)">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -107,6 +117,6 @@
     <div class="sidebar right"></div>
 </div>
 
-<script src="script.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
