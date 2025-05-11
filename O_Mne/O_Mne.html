@@ -1,13 +1,113 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>O_Mne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="O_Mne.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<!---->
+<div class="container">
+    <div class="sidebar left"></div>
+
+    <div class="content">
+
+        <header>
+
+            <div class="title_text_img"> <img class="logo" src="/website/logo2.png" alt="Логотип">
+                <p>English Club "The language lab"</p>
+            </div>
+            <nav class="main-nav">
+                <button onclick="location.href='/website/index.html'">Главная</button>
+                <button onclick="location.href='/website/Prepod/Prepod.html'">Преподавателю</button>
+                <button onclick="location.href='/website/Obych/Obych.html'">Обучающемуся</button>
+                <button onclick="location.href='/website/NO_1/No_1.html'">Кнопка</button>
+                <div class="button-select">
+                    <select id="portfolioSelect">
+                        <option disabled selected hidden>Портфолио</option>
+                        <option value="/website/My_Port/My_Port.html">Моё</option>
+                        <option value="/website/Obych_Port/ObychPort.html">Учащихся</option>
+                    </select>
+                </div>
+                <button onclick="location.href='/website/O_Mne/O_Mne.html'">Обо мне</button>
+            </nav>
+
+        </header>
+
+        <div class="inner-container">
+            <div class="inner-sidebar left-inner">
+                <div class="inner-content">
+                    <img src="/website/IMG_2.png" alt="фото">
+                </div>
+                <div id="accessibility-tools">
+                    <p>Версия для слабовидящих</p>
+                    <div class="button_slab">
+                        <button id="slab_btn" onclick="changeFontSize(-1)">+</button>
+                        <button id="slab_btn1" onclick="changeFontSize(0)">+</button>
+                        <button id="slab_btn2" onclick="changeFontSize(1)">+</button>
+                        <button id="slab_btn3" onclick="changeFontSize(2)">+</button>
+                        <button id="slab_btn4" onclick="changeFontSize(3)">+</button>
+                    </div>
+                </div>
+                <section id="contact">
+                    <p>Контакты</p>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                        <button class="button_form" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="main-content">
+                <main>
+                    <section id="about">
+                        <h2>Обо мне</h2>
+                        <p>Преподаватель английского языка в Государственном бюджетном профессиональном образовательном учреждении Ростовской области «Новочеркасский промышленно-гуманитарный колледж» (ГБПОУ РО «НПГК»).</p>
+                        <p>Родилась в городе Новочеркасске. В 2018 году, после окончания школы, поступила в филиал Таганрогский институт имени А. П. Чехова Ростовского государственного экономического университета, где с 2018 по 2023 год успешно освоила программу бакалавриата по направлению "Педагогическое образование с двумя профилями подготовки (Иностранный язык (английский) и Иностранный язык (французский))". С 2023 года продолжает обучение в магистратуре по программе "Педагогическое образование (Теория и практика преподавания иностранных языков в школе и вузе)" в том же учебном заведении.</p>
+                        <p>Педагогическую деятельность начала в 2022 году в качестве учителя английского языка. Общий стаж работы составляет 2,5 года.</p>
+                        <p>Квалификация: бакалавр.</p>
+                        <p>Профессиональные интересы связаны с постоянным совершенствованием методики преподавания английского языка, изучением новых и эффективных методов обучения, а также с углубленным изучением психолого-педагогической литературы.</p>
+                    </section>
+
+                </main>
+            </div>
+
+            <div class="inner-sidebar right-inner">
+                <div class="container_icon">
+                    <a class="tg" href="https://t.me/Anastasya1203" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a class="poch" href="mailto:anastasia.kostrova2016@yandex.ru" target="_blank"><i class="fab fa-envelope"></i></a>
+                    <a class="phone" href="tel:+79043479388"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="inner-qrk"><P class="soc_seti">Социальные сети</P><img src="/website/qrkode.png"><p class="Vk_dl">VK для студентов</p></div>
+                <div class="opros">
+                    <p>Материал был полезен вам?</p>
+                    <form>
+                        <label class="opros_form">
+                            <input type="radio" name="opros" value="yes" required>Да
+                        </label>
+                        <label class="opros_form">
+                            <input type="radio" name="opros" value="no" required>Нет
+                        </label>
+                        <button class="button_opros" type="submit">Голосовать</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Ваше Имя. Все права защищены.</p>
+        </footer>
+
+    </div>
+
+    <div class="sidebar right"></div>
+</div>
+
+<script src="O_Mne.js"></script>
 </body>
 </html>

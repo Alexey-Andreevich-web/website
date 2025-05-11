@@ -9,6 +9,15 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
+button{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
+    color: #ffffff;
+    border: none;
+}
+button:hover{
+    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
+}
 
 .container {
     display: flex;
@@ -45,19 +54,12 @@ header {
 }
 
 .main-nav button {
-    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
     margin: 10px auto;
-    border: none;
     padding: 0.6em;
     border-radius: 15px;
-    color: #ffffff;
     font-size: 1.3rem;
 
 }
-.main-nav button:hover {
-    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
-}
-
 .inner-container {
     display: flex;
     width: 100%;
@@ -101,21 +103,10 @@ input, textarea {
 }
 
 .button_form {
-    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
-    color: white;
     padding: 10px;
-    border: none;
-    cursor: pointer;
     border-radius: 15px;
     width: 150px;
 }
-
-.button_form:hover {
-
-    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
-
-}
-
 footer {
     background-color: #fff;
     text-align: center;
@@ -195,11 +186,7 @@ footer {
     margin-left: 3px;
 }
 .opros button{
-    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
-    color: white;
     padding: 10px;
-    border: none;
-    cursor: pointer;
     border-radius: 15px;
 }
 #accessibility-tools p{
