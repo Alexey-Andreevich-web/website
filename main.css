@@ -54,20 +54,6 @@ header {
     font-size: 1.3rem;
 
 }
-@media (max-width: 1050px){
-    .main-nav button {
-        font-size: 1rem;
-        padding: 0.6em;
-        border-radius: 12px;
-    }
-}
-@media (max-width: 800px){
-    .main-nav button {
-        font-size: 0.8rem;
-        padding: 0.6em;
-        border-radius: 12px;
-    }
-}
 .main-nav button:hover {
     background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
 }
@@ -257,4 +243,69 @@ footer {
 }
 .button_slab{
     padding: 20px 0 20px 10px ;
+}
+.button-select {
+    margin: 10px auto;
+    background: linear-gradient(0deg, rgba(65,129,68,1) 0%, rgba(202,241,0,1) 100%);
+    border-radius: 15px;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.button-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.6em;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+}
+.button-select select:hover {
+    background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
+}
+.button-select select option{
+    background: yellowgreen;
+}
+@media (max-width: 1050px){
+    .main-nav button {
+        font-size: 1rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 1rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+}
+@media (max-width: 800px){
+    .main-nav button {
+        font-size: 0.8rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 0.8rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+}
+#contact p{
+    text-align: center;
+    margin: 10px;
+}
+#contact-form{
+    margin: 10px;
+}
+#contact-form input{
+    width: 100%;
+}
+#contact-form button{
+    width: 100%;
 }
