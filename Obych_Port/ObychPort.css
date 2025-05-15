@@ -296,6 +296,20 @@ footer {
 #contact-form button{
     width: 100%;
 }
-#about p{
+#about img{
+    width: 30%;
+    height: 30%;
+}
+.poisk{
     margin: 10px;
+    width: 80%;
+    text-align: center;
+}
+.poisk button{
+    width: 100%;
+    border-radius: 15px;
+    padding: 7px;
+}
+.poisk input{
+    margin-top: 10px;
 }
