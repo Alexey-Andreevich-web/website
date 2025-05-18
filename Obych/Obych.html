@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Обучающемуся</title>
+    <link rel="stylesheet" href="Obych.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar left"></div>
+
+    <div class="content">
+
+        <header>
+
+            <div class="title_text_img"> <img class="logo" src="/website/logo2.png" alt="Логотип">
+                <p>English Club "The language lab"</p>
+            </div>
+            <nav class="main-nav">
+                <button onclick="location.href='/website/index.html'">Главная</button>
+                <button onclick="location.href='/website/Prepod/Prepod.html'">Преподавателю</button>
+                <button onclick="location.href='/website/Obych/Obych.html'">Обучающемуся</button>
+                <div class="button-select">
+                    <select id="portfolioSelect">
+                        <option disabled selected hidden>Портфолио</option>
+                        <option value="/website/My_Port/My_Port.html">Моё</option>
+                        <option value="/website/Obych_Port/ObychPort.html">Учащихся</option>
+                    </select>
+                </div>
+                <button onclick="location.href='/website/O_Mne/O_Mne.html'">Обо мне</button>
+            </nav>
+
+        </header>
+
+        <div class="inner-container">
+            <div class="inner-sidebar left-inner">
+                <div class="inner-content">
+                    <img src="/website/IMG_2.png" alt="фото">
+                </div>
+                <div id="accessibility-tools">
+                    <p>Версия для слабовидящих</p>
+                    <div class="button_slab">
+                        <button id="slab_btn" onclick="changeFontSize(-1)">+</button>
+                        <button id="slab_btn1" onclick="changeFontSize(0)">+</button>
+                        <button id="slab_btn2" onclick="changeFontSize(1)">+</button>
+                        <button id="slab_btn3" onclick="changeFontSize(2)">+</button>
+                        <button id="slab_btn4" onclick="changeFontSize(3)">+</button>
+                    </div>
+                </div>
+                <section id="contact">
+                    <p>Контакты</p>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                        <button class="button_form" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="main-content">
+                <main>
+                    <section id="about">
+                        <h3>1. Ссылки на электронные учебники:</h3>
+                        <a href="https://drive.google.com/file/d/1k5--aQBNQswL3WPSplb1-4SVq4ItRn2R/view?usp=drive_link">Английский язык для 1 курсов(общеобразовательный)</a>
+                        <a href="https://drive.google.com/file/d/1dimOAjilOi-K7IP-rd5n38SloaryIk2Z/view?usp=drive_link">Английский язык для специальности «Управление качеством продукции, процессов и услуг (по отраслям)»</a>
+                        <a href="https://drive.google.com/file/d/1_Zc-0TsJoK1w4-W4l3iDQwXZXoEXiEbG/view?usp=drive_link">Английский язык для специальности «Технология машиностроения»</a>
+                        <a href="https://drive.google.com/file/d/1yhIougUg5pZNcs0pmO8hki4Afl6pysov/view?usp=drive_link">Английский язык для профессии «Сварщик (ручной и частично механизированной сварки (наплавки)»</a>
+                        <a href="https://drive.google.com/file/d/15aE81rYM6hGLfY33jR3yeEtLkpN8y0ry/view?usp=drive_link">Английский язык для специальности «Информационные системы и программирование»</a>
+                        <a href="https://drive.google.com/file/d/1kMzv0wMnEj9z0kwe0rUHJk9Aag02D1ku/view?usp=drive_link">Английский язык для профессии «Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства»</a>
+                        <a href="https://drive.google.com/file/d/1RELTXMUGoLXxHfajxzAms_1c9gs-D_3T/view?usp=drive_link">Английский язык для профессии «Повар, кондитер»</a>
+                        <h3>2. Полезные материалы:</h3>
+                        <a href="https://drive.google.com/file/d/1eBVUVbgX7PvVRZdDrqzMxtoyVwDpWGKy/view?usp=drive_link">Самоучитель по английскому языку</a>
+                        <a href="https://drive.google.com/file/d/1KaZLrkUUF71MaKrTRzngSd_Kop633StG/view?usp=drive_link">Русско-английский словарь</a>
+                        <h3>3. Вопросы для подготовки к дифференцированному зачету:</h3>
+                        <a href="https://docs.google.com/document/d/1h4c25eSq1alx075CCVEEImqkQLj4C6fT/edit?usp=drive_link&ouid=104121092851264347625&rtpof=true&sd=true">Вопросы и задания для дифференцированного зачёта</a>
+                    </section>
+
+                </main>
+            </div>
+
+            <div class="inner-sidebar right-inner">
+                <div class="poisk">
+                    <p>Поиск по странице</p>
+                    <input type="text" id="searchInput" placeholder="Введите запрос" />
+                    <button onclick="performSearch()">Поиск</button>
+                    <p id="errorMessage"></p>
+                </div>
+                <div class="container_icon">
+                    <a class="tg" href="https://t.me/Anastasya1203" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a class="poch" href="mailto:anastasia.kostrova2016@yandex.ru" target="_blank"><i class="fab fa-envelope"></i></a>
+                    <a class="phone" href="tel:+79043479388"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="inner-qrk"><P class="soc_seti">Социальные сети</P><img src="/website/qrkode.png"><p class="Vk_dl">VK для студентов</p></div>
+                <div class="opros">
+                    <p>Материал был полезен вам?</p>
+                    <form>
+                        <label class="opros_form">
+                            <input type="radio" name="opros" value="yes" required>Да
+                        </label>
+                        <label class="opros_form">
+                            <input type="radio" name="opros" value="no" required>Нет
+                        </label>
+                        <button class="button_opros" type="submit">Голосовать</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Ваше Имя. Все права защищены.</p>
+        </footer>
+
+    </div>
+
+    <div class="sidebar right"></div>
+</div>
+
+<script src="Obych.js"></script>
+</body>
+</html>

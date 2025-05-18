@@ -84,11 +84,6 @@ main {
 section {
     margin-bottom: 40px;
 }
-
-h2 {
-    color: #0077cc;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -296,9 +291,9 @@ footer {
 #contact-form button{
     width: 100%;
 }
-#about img{
-    width: 30%;
-    height: 30%;
+#about a{
+    display: flex;
+    flex-direction: column;
 }
 .poisk{
     margin: 10px;
@@ -313,3 +308,4 @@ footer {
 .poisk input{
     margin-top: 10px;
 }
+
