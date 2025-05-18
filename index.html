@@ -22,7 +22,6 @@
                 <button onclick="location.href='index.html'">Главная</button>
                 <button onclick="location.href='Prepod/Prepod.html'">Преподавателю</button>
                 <button onclick="location.href='Obych/Obych.html'">Обучающемуся</button>
-                <button onclick="location.href='NO_1/No_1.html'">Кнопка</button>
                 <div class="button-select">
                     <select id="portfolioSelect">
                         <option disabled selected hidden>Портфолио</option>
@@ -91,6 +90,12 @@
             </div>
 
             <div class="inner-sidebar right-inner">
+                <div class="poisk">
+                    <p>Поиск по странице</p>
+                    <input type="text" id="searchInput" placeholder="Введите запрос" />
+                    <button onclick="performSearch()">Поиск</button>
+                    <p id="errorMessage"></p>
+                </div>
                 <div class="container_icon">
                     <a class="tg" href="https://t.me/Anastasya1203" target="_blank"><i class="fab fa-telegram"></i></a>
                     <a class="poch" href="mailto:anastasia.kostrova2016@yandex.ru" target="_blank"><i class="fab fa-envelope"></i></a>

@@ -299,3 +299,16 @@ footer {
 #about p{
     margin: 10px;
 }
+.poisk{
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+}
+.poisk button{
+    width: 100%;
+    border-radius: 15px;
+    padding: 7px;
+}
+.poisk input{
+    margin-top: 10px;
+}
