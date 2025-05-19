@@ -277,6 +277,103 @@ footer {
         padding: 0.6em;
         border-radius: 12px;
     }
+    #about{
+        font-size: 0.9rem;
+    }
+    .title_text_img p{
+        font-size: 1.2rem;
+    }
+    .right-inner{
+        font-size: 0.9rem;
+    }
+    .left-inner{
+        font-size: 0.9rem;
+    }
+    .button_opros{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+    .button_form{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+    .button_poisk{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+}
+@media (max-width:620px){
+    .main-nav button {
+        font-size: 0.7rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 0.7rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    #about{
+        font-size: 0.8rem;
+    }
+    .right-inner{
+        font-size: 0.8rem;
+    }
+    .left-inner{
+        font-size: 0.8rem;
+    }
+    .button_opros{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+    .button_form{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+    .button_poisk{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+}
+@media (max-width:550px){
+    .main-nav button {
+        font-size: 0.6rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 0.6rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    #about{
+        font-size: 0.7rem;
+    }
+    .right-inner{
+        font-size: 0.7rem;
+    }
+    .left-inner{
+        font-size: 0.7rem;
+    }
+    .button_opros{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .button_form{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .button_poisk{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .sidebar{
+        width: 0;
+        height: 0;
+    }
+    .content{
+        width: 100%;
+    }
 }
 #contact p{
     text-align: center;
