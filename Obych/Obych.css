@@ -7,7 +7,6 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
 }
 button{
     cursor: pointer;
@@ -18,12 +17,10 @@ button{
 button:hover{
     background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
 }
-
 .container {
     display: flex;
     min-height: 100vh;
 }
-
 .sidebar {
     width: 10%;
     background: linear-gradient(157deg, rgba(245, 198, 227, 0.89) 20%, rgba(148, 187, 233, 1) 100%);
@@ -38,13 +35,11 @@ button:hover{
 header {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 5px;
     border-bottom: 0.5px solid rgba(245, 198, 227, 0.89);
-
 }
-
 .main-nav {
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -63,7 +58,6 @@ header {
     width: 100%;
     flex-grow: 1; /* Заставляет занимать всё оставшееся пространство */
 }
-
 .inner-sidebar {
     flex: 1;
     border-bottom: 0.5px solid rgba(245, 198, 227, 0.89);
@@ -389,10 +383,6 @@ footer {
 #contact-form button{
     width: 100%;
 }
-#about a{
-    display: flex;
-    flex-direction: column;
-}
 .poisk{
     margin: 10px;
     width: 80%;
@@ -405,4 +395,11 @@ footer {
 }
 .poisk input{
     margin-top: 10px;
+}
+h2 {
+    color: #0077cc;
+}
+#about a{
+     display: flex;
+     flex-direction: column;
 }

@@ -7,7 +7,6 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
 }
 button{
     cursor: pointer;
@@ -18,39 +17,33 @@ button{
 button:hover{
     background: linear-gradient(0deg, rgba(210,119,76,1) 0%, rgba(241,202,0,1) 100%);
 }
-
 .container {
     display: flex;
     min-height: 100vh;
 }
-
 .sidebar {
     width: 10%;
     background: linear-gradient(157deg, rgba(245, 198, 227, 0.89) 20%, rgba(148, 187, 233, 1) 100%);
     min-height: 100vh;
 }
-
 .content {
     width: 80%;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Очень важно */
 }
-
 header {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    border-bottom: 0.5px solid rgba(245, 198, 227, 0.89);
 }
-
 .main-nav {
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .main-nav button {
@@ -65,18 +58,21 @@ header {
     width: 100%;
     flex-grow: 1; /* Заставляет занимать всё оставшееся пространство */
 }
-
 .inner-sidebar {
     flex: 1;
-    background-color: #ffffff;
-    border: 1px solid black;
+    border-bottom: 0.5px solid rgba(245, 198, 227, 0.89);
+    border-top: 1px solid rgba(245, 198, 227, 0.89);
 }
-
+.left-inner{
+    border-right: 1.5px solid rgba(245, 198, 227, 0.89);
+}
+.right-inner{
+    border-left: 1.5px solid rgba(245, 198, 227, 0.89);
+}
 .main-content {
     flex: 6;
     padding: 20px;
 }
-
 main {
     width: 100%;
 }
@@ -84,11 +80,6 @@ main {
 section {
     margin-bottom: 40px;
 }
-
-h2 {
-    color: #0077cc;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -108,10 +99,9 @@ input, textarea {
     width: 150px;
 }
 footer {
-    background-color: #fff;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 0.5px solid rgba(245, 198, 227, 0.89);
 }
 .logo{
     display: flex;
@@ -282,6 +272,103 @@ footer {
         padding: 0.6em;
         border-radius: 12px;
     }
+    #about{
+        font-size: 0.9rem;
+    }
+    .title_text_img p{
+        font-size: 1.2rem;
+    }
+    .right-inner{
+        font-size: 0.9rem;
+    }
+    .left-inner{
+        font-size: 0.9rem;
+    }
+    .button_opros{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+    .button_form{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+    .button_poisk{
+        font-size: 0.7rem;
+        padding: 0.6em;
+    }
+}
+@media (max-width:620px){
+    .main-nav button {
+        font-size: 0.7rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 0.7rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    #about{
+        font-size: 0.8rem;
+    }
+    .right-inner{
+        font-size: 0.8rem;
+    }
+    .left-inner{
+        font-size: 0.8rem;
+    }
+    .button_opros{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+    .button_form{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+    .button_poisk{
+        font-size: 0.6rem;
+        padding: 0.6em;
+    }
+}
+@media (max-width:550px){
+    .main-nav button {
+        font-size: 0.6rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    .button-select select {
+        font-size: 0.6rem;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
+    #about{
+        font-size: 0.7rem;
+    }
+    .right-inner{
+        font-size: 0.7rem;
+    }
+    .left-inner{
+        font-size: 0.7rem;
+    }
+    .button_opros{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .button_form{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .button_poisk{
+        font-size: 0.6rem;
+        padding: 0.5em;
+    }
+    .sidebar{
+        width: 0;
+        height: 0;
+    }
+    .content{
+        width: 100%;
+    }
 }
 #contact p{
     text-align: center;
@@ -308,4 +395,11 @@ footer {
 }
 .poisk input{
     margin-top: 10px;
+}
+h2 {
+    color: #0077cc;
+}
+#about a{
+    display: flex;
+    flex-direction: column;
 }
