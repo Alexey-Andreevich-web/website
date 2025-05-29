@@ -112,12 +112,26 @@ footer {
     display: flex;
     width: 100%;
     max-height: 125px;
+}
+#div_titl{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+#logo_text{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.title_text_img{
+    display: flex;
+    width: 100%;
+    max-height: 125px;
 
 }
 .title_text_img p{
     display: flex;
     width: 100%;
-    font-size: 25px;
+    font-size: 28px;
     justify-content: center;
     align-items: center;
 
@@ -260,6 +274,12 @@ footer {
         padding: 0.6em;
         border-radius: 12px;
     }
+    #logo_text{
+        font-size: 14px;
+    }
+    .title_text_img p{
+        font-size: 24px;
+    }
 }
 @media (max-width: 800px){
     .main-nav button {
@@ -296,6 +316,12 @@ footer {
         font-size: 0.7rem;
         padding: 0.6em;
     }
+    #logo_text{
+        font-size: 11px;
+    }
+    .title_text_img p{
+        font-size: 21px;
+    }
 }
 @media (max-width:620px){
     .main-nav button {
@@ -328,6 +354,12 @@ footer {
     .button_poisk{
         font-size: 0.6rem;
         padding: 0.6em;
+    }
+    #logo_text{
+        font-size: 10px;
+    }
+    .title_text_img p{
+        font-size:18px;
     }
 }
 @media (max-width:550px){
@@ -399,7 +431,8 @@ footer {
 h2 {
     color: #0077cc;
 }
-#about a{
-    display: flex;
-    flex-direction: column;
+#about img{
+    width: 50%;
+    height: 30%;
+    margin: 10px;
 }
